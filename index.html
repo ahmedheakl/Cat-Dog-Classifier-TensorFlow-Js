@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Dog Cat Classifier</title> 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
         <link rel="stylesheet" href="./index.css" type='text/css'>
         <script src='index.js' type="text/javascript"></script>
 
@@ -15,15 +16,26 @@
                 <span>Cat Dogs Classification Using Tensorflow.JS</span>
             </div>
 
-            <div class='image-section'>
+            <div class='image-section' style='display: none;'>
                 <img class='image-view' style='width: 350px; height: 300px; border-radius: 5px;' src='' >
             </div>
 
             <form class='input-div'>
                 <input class='input-field' type='file' name='file'>
                 <button type='submit' class='upload'>Upload</button>
+            </form>
+            
+            <div class='predict-div' style='display: none;'>
+                <button id='predict-button' class="btn btn-primary" onclick='predict(this)'>Predict</button>
             </div>
+
+            <div class='result-div'>
+                <span class='result-span'></span>
+            </div>
+            
         </div>
+
+        
 
         
     </body>
