@@ -11,6 +11,10 @@ Classifying dog and cats photos using Tensorflow.js **(acc ~ 0.975)**
 * Used simple data augmentation techniques like `width_shift`, `height_shift`, and `horizontal flip`
 * Resized all the images using a DataGenerator to be of shape `(224, 224, 3)` which is `(width, height, n_channels)`
 
+Here is an Example:
+
+![alt text](https://github.com/ahmedheakl/Cat-Dog-Classifier-TensorFlow-Js/blob/main/Data_Augmentation.png)
+
 ## Model Building and Transfer Learning
 
 * Loaded the weights of the VGG16 pre-trained model (with the output layers removed).
