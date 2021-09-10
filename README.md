@@ -14,8 +14,11 @@ Classifying dog and cats photos using Tensorflow.js **(val_acc ~ 0.975)**
 ## Code and Packages
 
 **Python Version:** 3.9.6
+
 **Tensorflow Version:** 2.6.0
+
 **For Tensorflow on GPU:** Follow [this guide](https://www.tensorflow.org/install/gpu)
+
 **Packages:** Tensorflow, Numpy, Tensorflow.js, CSS, HTML, JavaScript
 
 **Note: you need to run this code on a server (e.g. *chrome server*) so it can import the model successfully**
