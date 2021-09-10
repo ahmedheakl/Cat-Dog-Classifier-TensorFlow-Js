@@ -53,7 +53,7 @@ Here is a view of how the website looks:
 
 ![alt_text](https://github.com/ahmedheakl/Cat-Dog-Classifier-TensorFlow-Js/blob/main/image_uploaded.png)
 
-![alt_text](https://github.com/ahmedheakl/Cat-Dog-Classifier-TensorFlow-Js/blob/main/cat_predict.png)
+![alt_text](https://github.com/ahmedheakl/Cat-Dog-Classifier-TensorFlow-Js/blob/main/cat_prediction.png)
 
 ![alt_text](https://github.com/ahmedheakl/Cat-Dog-Classifier-TensorFlow-Js/blob/main/dog_predict.png)
 
