@@ -7,7 +7,7 @@ Classifying dog and cats photos using Tensorflow.js **(val_acc ~ 0.975)**
 
 ## Resouces:
 
-[How I learned about the VGG16 model] (https://towardsdatascience.com/step-by-step-vgg16-implementation-in-keras-for-beginners-a833c686ae6c)
+[How I learned about the VGG16 model](https://towardsdatascience.com/step-by-step-vgg16-implementation-in-keras-for-beginners-a833c686ae6c)
 
 ## Image Pre-Processing and Image Augmentation 
 
