@@ -28,5 +28,7 @@ Here is an Example:
 * Trained the model for the 10 epochs. It showed astonishing results from the first epoch.
 * Saved the model as the `JSON` object for later use in Tensorflow.js
 
+![alt_text](https://www.researchgate.net/publication/328966158/figure/fig2/AS:693278764720129@1542301946576/An-overview-of-the-VGG-16-model-architecture-this-model-uses-simple-convolutional-blocks.png)
+
 ## 
 
