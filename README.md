@@ -5,9 +5,20 @@ Classifying dog and cats photos using Tensorflow.js **(val_acc ~ 0.975)**
 * Built a single-page application using `HTML`, `JavaScript`, and `CSS`
 * Uploaded the model using a `chrome server` to predict the images. 
 
-## Resouces:
+## Resouces
 
 [How I learned about the VGG16 model](https://towardsdatascience.com/step-by-step-vgg16-implementation-in-keras-for-beginners-a833c686ae6c)
+[Tensorflow.js Documentation](https://js.tensorflow.org/api/1.0.0/)
+[The Data Augmentation Implementation](https://machinelearningmastery.com/how-to-configure-image-data-augmentation-when-training-deep-learning-neural-networks/)
+
+## Code and Packages
+
+**Python Version:** 3.9.6
+**Tensorflow Version:** 2.6.0
+**For Tensorflow on GPU:** Follow [this guide](https://www.tensorflow.org/install/gpu)
+**Packages:** Tensorflow, Numpy, Tensorflow.js, CSS, HTML, JavaScript
+
+**Note: you need to run this code on a server (e.g. *chrome server*) so it can import the model successfully**
 
 ## Image Pre-Processing and Image Augmentation 
 
