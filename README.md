@@ -29,9 +29,33 @@ Here is an Example:
 * Saved the model as the `JSON` object for later use in Tensorflow.js
 
 **Note: I didn't upload the trained model here because of its huge size (~ 280 MB).
-You can run the train.ipynb notebook to train the model and creates the model**
+You can run the train.ipynb notebook to train the model and create the model**
 
 ![alt_text](https://www.researchgate.net/publication/328966158/figure/fig2/AS:693278764720129@1542301946576/An-overview-of-the-VGG-16-model-architecture-this-model-uses-simple-convolutional-blocks.png)
 
 ## Website Building and Model Uploading
+
+* Built an entry `HTML` page:
+      * A header with the title of my project
+      * An input field with type file to upload the image.
+      * A button to predict the classes.
+* Designed the UI using `CSS`
+* Implemented the logic using `JavaScript`:
+      * Added Event Listener for the form to read the image data.
+      * Loaded the pre-trained model using tensorflow.js
+      * Resized the image for the model.
+      * Predicted the umage class.
+      * Updated the UI with predicted class value.
+
+Here is a view of how the website looks:
+
+![alt_text](https://github.com/ahmedheakl/Cat-Dog-Classifier-TensorFlow-Js/blob/main/entry_page.png)
+
+![alt_text](https://github.com/ahmedheakl/Cat-Dog-Classifier-TensorFlow-Js/blob/main/image_uploaded.png)
+
+![alt_text](https://github.com/ahmedheakl/Cat-Dog-Classifier-TensorFlow-Js/blob/main/cat_prediction.png)
+
+![alt_text](https://github.com/ahmedheakl/Cat-Dog-Classifier-TensorFlow-Js/blob/main/dog_prediction.png)
+
+
 
