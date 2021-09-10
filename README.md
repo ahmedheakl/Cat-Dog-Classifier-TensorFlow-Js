@@ -5,6 +5,10 @@ Classifying dog and cats photos using Tensorflow.js **(val_acc ~ 0.975)**
 * Built a single-page application using `HTML`, `JavaScript`, and `CSS`
 * Uploaded the model using a `chrome server` to predict the images. 
 
+## Resouces:
+
+[How I learned about the VGG16 model] [https://towardsdatascience.com/step-by-step-vgg16-implementation-in-keras-for-beginners-a833c686ae6c]
+
 ## Image Pre-Processing and Image Augmentation 
 
 * Used the VGG16 mean values to standardize the model, since it is better for performance. 
