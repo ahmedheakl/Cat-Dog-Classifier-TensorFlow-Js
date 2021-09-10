@@ -1,4 +1,4 @@
-# Cat-Dog-Classifier-TensorFlow-Js: Project Overview
+# Cat Dog Classifier TensorFlow.js: Project Overview
 Classifying dog and cats photos using Tensorflow.js **(acc ~ 0.975)**
 * Pre-processed the images using a Data Generator and applied `Image Augmentation`
 * Build a `transfer learning` model from the `VGG16` pre-trained model
@@ -23,3 +23,5 @@ Classifying dog and cats photos using Tensorflow.js **(acc ~ 0.975)**
     * Metrics: Accuracy 
 * Trained the model for the 10 epochs. It showed astonishing results from the first epoch.
 * Saved the model as the `JSON` object for later use in Tensorflow.js
+
+## 
