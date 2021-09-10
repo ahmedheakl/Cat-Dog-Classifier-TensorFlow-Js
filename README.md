@@ -1,5 +1,5 @@
 # Cat Dog Classifier TensorFlow.js: Project Overview
-Classifying dog and cats photos using Tensorflow.js **(acc ~ 0.975)**
+Classifying dog and cats photos using Tensorflow.js **(val_acc ~ 0.975)**
 * Pre-processed the images using a Data Generator and applied `Image Augmentation`
 * Build a `transfer learning` model from the `VGG16` pre-trained model
 * Built a single-page application using `HTML`, `JavaScript`, and `CSS`
