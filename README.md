@@ -28,6 +28,9 @@ Here is an Example:
 * Trained the model for the 10 epochs. It showed astonishing results from the first epoch.
 * Saved the model as the `JSON` object for later use in Tensorflow.js
 
+**Note: I didn't upload the trained model here because of its huge size (~ 280 MB).
+You can run the train.ipynb notebook to train the model and creates the model**
+
 ![alt_text](https://www.researchgate.net/publication/328966158/figure/fig2/AS:693278764720129@1542301946576/An-overview-of-the-VGG-16-model-architecture-this-model-uses-simple-convolutional-blocks.png)
 
 ## Website Building and Model Uploading
