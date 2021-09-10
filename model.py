@@ -1,35 +1,29 @@
 import tensorflow as tf
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
-from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Flatten, Dense
+from tensorflow.keras.applications.vgg16 import VGG16
+from tensorflow.keras.models import Model
 
 
-def model():
-    model = Sequential([
-        Conv2D(input_shape=(150, 150, 3), kernel_size=(
-            3, 3), filters=32, activation='relu',),
-        MaxPooling2D(2, 2),
+def getModel():
 
-        Conv2D(input_shape=(150, 150, 3), kernel_size=(
-            3, 3), filters=64, activation='relu',),
-        MaxPooling2D(2, 2),
+    # load model
+    model = VGG16(include_top=False, input_shape=(224, 224, 3))
+    # mark loaded layers as not trainable
+    for layer in model.layers:
+        layer.trainable = False
 
-        Conv2D(input_shape=(150, 150, 3), kernel_size=(
-            3, 3), filters=64, activation='relu',),
-        MaxPooling2D(2, 2),
+    # add new classifier layers
+    flat1 = Flatten()(model.layers[-1].output)
+    class1 = Dense(128, activation='relu',
+                   kernel_initializer='he_uniform')(flat1)
+    output = Dense(1, activation='sigmoid')(class1)
 
-        Conv2D(input_shape=(150, 150, 3), kernel_size=(
-            3, 3), filters=128, activation='relu',),
-        MaxPooling2D(2, 2),
+    # define new model
+    model = Model(inputs=model.inputs, outputs=output)
 
-        Conv2D(input_shape=(150, 150, 3), kernel_size=(
-            3, 3), filters=128, activation='relu',),
-        MaxPooling2D(2, 2),
-
-
-        Flatten(),
-        Dense(200, activation='relu'),
-        Dense(50, activation='relu'),
-        Dense(1, activation='sigmoid'),
-    ])
+    # compile model
+    opt = tf.keras.optimizers.Adam(learning_rate=0.001)
+    model.compile(optimizer=opt, loss='binary_crossentropy',
+                  metrics=['accuracy'])
 
     return model
